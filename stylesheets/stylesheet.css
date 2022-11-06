@@ -1,8 +1,31 @@
 body {
-    background-color: #f2e9de;
-    color: #55869b;
-    font-family: 'Noto Sans JP', sans-serif;
+  background-color: #f2e9de;
+  color: #55869b;
+  font-family: "Noto Sans JP", sans-serif;
 }
 aside {
-    background-color: #f9f3ec;
+  background-color: #f9f3ec;
+}
+.button {
+  color: white;
+  border: 0px;
+  border-radius: 10px;
+  padding: 10px;
+}
+.new-note,
+.save {
+  background-color: #5394a0;
+}
+.dark-theme {
+  background-color: #6f6a87;
+}
+.cancel {
+  background-color: #d9827c;
+}
+#note-area {
+  background-color: #f9f3ec;
+  border: 2px solid #79a8e9;
+  border-radius: 2px;
+  resize: none;
+  padding: 10px;
 }
