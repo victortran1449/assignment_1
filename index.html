@@ -1,13 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="stylesheets/stylesheet.css">
-</head>
-<body>
-    
-</body>
+    <link rel="stylesheet" href="stylesheets/stylesheet.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="note-page">
+    <header class="note-header">
+      <h1>Take Better Notes</h1>
+      <nav>
+        <ul>
+          <li>About</li>
+          <li>Docs</li>
+        </ul>
+      </nav>
+    </header>
+    <aside class="note-aside">
+      <h1>My Notes</h1>
+      <div>
+        <ul>
+          <li>note one</li>
+          <li>note two</li>
+        </ul>
+      </div>
+    </aside>
+    <main class="note-main">
+      <section class="note-section">
+        <div class="note-section-1">
+          <button class="new-note button">New Note</button>
+          <button class="dark-theme button">Dark Theme</button>
+        </div>
+        <textarea
+          id="note-area"
+          rows="10"
+          placeholder="This is a placeholder"
+        ></textarea>
+        <div class="note-section-2">
+          <button class="save button">Save</button>
+          <button class="cancel button">Cancel</button>
+        </div>
+      </section>
+    </main>
+    <footer class="note-footer">
+      <h1>Keep in Touch</h1>
+      <div>
+        <a
+          ><img
+            src="images/linkedin.png"
+            alt="linkedin logo"
+            width="40"
+            height="40"
+        /></a>
+        <a
+          ><img
+            src="images/internet.png"
+            alt="internet logo"
+            width="40"
+            height="40"
+        /></a>
+      </div>
+    </footer>
+  </body>
 </html>
