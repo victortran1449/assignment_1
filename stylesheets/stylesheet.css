@@ -1,39 +1,44 @@
 body {
   height: 100vh;
   margin: 0px;
+  font-size: 20px;
 }
 body {
   background-color: #f2e9de;
   color: #55869b;
   font-family: "Noto Sans JP", sans-serif;
 }
-aside {
-  background-color: #f9f3ec;
-}
-footer {
-  margin-bottom: 5px;
-  margin-top: 60px;
-}
-h1,
-h2 {
-  text-align: center;
-}
 header h1 {
   margin: 10px;
+}
+header ul {
+  margin: 0px;
+  margin-right: 10px;
+}
+aside {
+  background-color: #f9f3ec;
 }
 aside h1 {
   margin: 15px;
   font-size: 36px;
   margin-bottom: 0px;
 }
+aside div {
+  text-align: center;
+  margin-bottom: 30px;
+}
+footer {
+  margin-bottom: 5px;
+  margin-top: 60px;
+}
 footer h1 {
   margin: 0px;
   margin-bottom: 20px;
   font-size: 30px;
 }
-header ul {
-  margin: 0px;
-  margin-right: 10px;
+h1,
+h2 {
+  text-align: center;
 }
 
 .button {
@@ -60,9 +65,12 @@ header ul {
   resize: none;
   padding: 10px;
   margin: 0px 15px;
+  font-size: 20px;
 }
 .note-aside ul {
   list-style-type: square;
+  display: inline-block;
+  padding-left: 0px;
 }
 .note-footer div {
   display: flex;
@@ -89,8 +97,14 @@ header ul {
   padding-left: 0px;
 }
 @media screen and (min-width: 996px) {
+  body {
+    font-size: 16px;
+  }
   aside h1 {
     font-size: 32px;
+  }
+  aside div {
+    text-align: left;
   }
   footer h1 {
     font-size: 24px;
@@ -116,6 +130,9 @@ header ul {
     grid-column: 1/2;
     grid-row: 1/4;
   }
+  .note-aside ul {
+    padding-left: 40px;
+  }
   .note-header ul {
     display: flex;
     list-style-type: none;
@@ -129,20 +146,7 @@ header ul {
     padding: 10px;
     font-size: 13px;
   }
-}
-@media screen and (max-width: 995px) {
-  body {
-    font-size: 20px;
-  }
-  aside div {
-    text-align: center;
-    margin-bottom: 30px;
-  }
-  .note-aside ul {
-    display: inline-block;
-    padding-left: 0px;
-  }
   #note-area {
-    font-size: 20px
+    font-size: 14px;
   }
 }
