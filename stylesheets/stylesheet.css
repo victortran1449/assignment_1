@@ -111,7 +111,7 @@ h2 {
   }
   .note-page {
     display: grid;
-    grid-template-columns: 1fr 5fr;
+    grid-template-columns: 1fr 4fr;
     grid-template-rows: auto 1fr auto;
   }
   .note-header {
