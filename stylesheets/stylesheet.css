@@ -2,11 +2,9 @@ body {
   height: 100vh;
   margin: 0px;
   font-size: 20px;
-}
-body {
+  font-family: "Noto Sans JP", sans-serif;
   background-color: #f2e9de;
   color: #55869b;
-  font-family: "Noto Sans JP", sans-serif;
 }
 header h1 {
   margin: 10px;
@@ -16,7 +14,7 @@ header ul {
   margin-right: 10px;
 }
 aside {
-  background-color: #f9f3ec;
+  background-color: #f9f3ec
 }
 aside h1 {
   margin: 15px;
@@ -95,6 +93,13 @@ h2 {
   list-style-type: none;
   text-align: center;
   padding-left: 0px;
+}
+.dark-body {
+  background-color: #141414;
+  color: white;
+}
+.dark-aside {
+  background-color: #282828;
 }
 @media screen and (min-width: 996px) {
   body {
