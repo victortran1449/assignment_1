@@ -42,3 +42,21 @@ const clearNoteArea = () => {
 newNoteButton.addEventListener("click", clearNoteArea);
 
 const notesArray = [{ title: "note one", body: "this is my first note" }];
+
+const addNote = () => {
+  noteName = prompt("Enter title name: ");
+  noteContent = noteArea.value;
+  if (noteName != null && noteName != "") {
+    note = { title: noteName, body: noteContent };
+    notesArray.push(note);
+    populateNoteList(note);
+  }
+};
+
+const noteList = document.querySelector(".note-list");
+const populateNoteList = (note) => {
+  let Note = document.createElement("li");
+  Note.textContent = note["title"];
+  noteList.append(Note);
+};
+saveButton.addEventListener("click", addNote);
