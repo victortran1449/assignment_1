@@ -20,13 +20,23 @@ const darkTheme = () => {
     darkThemeButton.textContent = "Dark Theme";
   }
 };
-
 darkThemeButton.addEventListener("click", darkTheme);
 
 const hideContent = () => {
-  noteArea.classList.add("hide")
-  saveButton.classList.add("hide")
-  cancelButton.classList.add("hide")
+  noteArea.classList.add("hide");
+  saveButton.classList.add("hide");
+  cancelButton.classList.add("hide");
 };
-
 cancelButton.addEventListener("click", hideContent);
+
+const unhideContent = () => {
+  noteArea.classList.remove("hide");
+  saveButton.classList.remove("hide");
+  cancelButton.classList.remove("hide");
+};
+newNoteButton.addEventListener("click", unhideContent);
+
+const clearNoteArea = () => {
+  noteArea.value = "";
+};
+newNoteButton.addEventListener("click", clearNoteArea);
