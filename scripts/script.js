@@ -60,3 +60,15 @@ const populateNoteList = (note) => {
   noteList.append(Note);
 };
 saveButton.addEventListener("click", addNote);
+
+const displayNote = (e) => {
+  unhideContent()
+  noteName = e.target.textContent
+  for (let note of notesArray) {
+    if (note.title == noteName) {
+      noteContent = note.body
+    }
+  }
+  noteArea.value = noteContent
+}
+noteList.addEventListener("click", displayNote)
