@@ -22,3 +22,11 @@ const darkTheme = () => {
 };
 
 darkThemeButton.addEventListener("click", darkTheme);
+
+const hideContent = () => {
+  noteArea.classList.add("hide")
+  saveButton.classList.add("hide")
+  cancelButton.classList.add("hide")
+};
+
+cancelButton.addEventListener("click", hideContent);

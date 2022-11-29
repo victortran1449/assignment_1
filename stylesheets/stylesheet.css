@@ -116,6 +116,9 @@ h2 {
 .dark-cancel {
   background-color: red;
 }
+.hide {
+  opacity: 0;
+}
 
 @media screen and (min-width: 996px) {
   body {
