@@ -25,6 +25,9 @@ aside div {
   text-align: center;
   margin-bottom: 30px;
 }
+aside li {
+  text-align: left;
+}
 footer {
   margin-bottom: 5px;
   margin-top: 60px;
