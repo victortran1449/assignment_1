@@ -40,3 +40,5 @@ const clearNoteArea = () => {
   noteArea.value = "";
 };
 newNoteButton.addEventListener("click", clearNoteArea);
+
+const notesArray = [{ title: "note one", body: "this is my first note" }];
