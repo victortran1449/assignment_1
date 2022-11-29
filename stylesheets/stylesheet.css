@@ -14,7 +14,7 @@ header ul {
   margin-right: 10px;
 }
 aside {
-  background-color: #f9f3ec
+  background-color: #f9f3ec;
 }
 aside h1 {
   margin: 15px;
@@ -56,7 +56,7 @@ h2 {
 .cancel {
   background-color: #d9827c;
 }
-#note-area {
+.note-area {
   background-color: #f9f3ec;
   border: 2px solid #79a8e9;
   border-radius: 2px;
@@ -101,6 +101,22 @@ h2 {
 .dark-aside {
   background-color: #282828;
 }
+.dark-note-area {
+  background-color: #282828;
+  border-color: white;
+  color: white;
+}
+.dark-new-note,
+.dark-save {
+  background-color: #00008b;
+}
+.dark-dark-theme {
+  background-color: #320064;
+}
+.dark-cancel {
+  background-color: red;
+}
+
 @media screen and (min-width: 996px) {
   body {
     font-size: 16px;
@@ -151,7 +167,7 @@ h2 {
     padding: 10px;
     font-size: 13px;
   }
-  #note-area {
+  .note-area {
     font-size: 14px;
   }
 }
