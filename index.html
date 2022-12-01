@@ -4,14 +4,15 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Take Better Notes</title>
     <link rel="stylesheet" href="stylesheets/stylesheet.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400&display=swap"
       rel="stylesheet"
     />
+    <script src="scripts/script.js" defer></script>
   </head>
-  <body class="note-page">
+  <body class="note-page light-body">
     <header class="note-header">
       <h1>Take Better Notes</h1>
       <nav>
@@ -21,15 +22,6 @@
         </ul>
       </nav>
     </header>
-    <aside class="note-aside">
-      <h1>My Notes</h1>
-      <div>
-        <ul>
-          <li>note one</li>
-          <li>note two</li>
-        </ul>
-      </div>
-    </aside>
     <main class="note-main">
       <section class="note-section">
         <div class="note-section-1">
@@ -37,9 +29,9 @@
           <button class="dark-theme button">Dark Theme</button>
         </div>
         <textarea
-          id="note-area"
+          class="note-area"
           rows="10"
-          placeholder="This is a placeholder"
+          placeholder="Enter note"
         ></textarea>
         <div class="note-section-2">
           <button class="save button">Save</button>
@@ -47,6 +39,14 @@
         </div>
       </section>
     </main>
+    <aside class="note-aside">
+      <h1>My Notes</h1>
+      <div>
+        <ul class="note-list">
+          <li>note one</li>
+        </ul>
+      </div>
+    </aside>
     <footer class="note-footer">
       <h1>Keep in Touch</h1>
       <div>
