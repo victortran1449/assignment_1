@@ -20,6 +20,7 @@ const darkTheme = () => {
     darkThemeButton.textContent = "Dark Theme";
   }
 };
+
 darkThemeButton.addEventListener("click", darkTheme);
 
 const hideContent = () => {
@@ -27,6 +28,7 @@ const hideContent = () => {
   saveButton.classList.add("hide");
   cancelButton.classList.add("hide");
 };
+
 cancelButton.addEventListener("click", hideContent);
 
 const unhideContent = () => {
@@ -34,11 +36,12 @@ const unhideContent = () => {
   saveButton.classList.remove("hide");
   cancelButton.classList.remove("hide");
 };
-newNoteButton.addEventListener("click", unhideContent);
 
 const clearNoteArea = () => {
   noteArea.value = "";
 };
+
+newNoteButton.addEventListener("click", unhideContent);
 newNoteButton.addEventListener("click", clearNoteArea);
 
 const notesArray = [{ title: "note one", body: "this is my first note" }];
@@ -54,21 +57,22 @@ const addNote = () => {
 };
 
 const noteList = document.querySelector(".note-list");
+
 const populateNoteList = (note) => {
   let Note = document.createElement("li");
   Note.textContent = note["title"];
   noteList.append(Note);
 };
+
 saveButton.addEventListener("click", addNote);
 
 const displayNote = (e) => {
-  unhideContent()
-  noteName = e.target.textContent
+  unhideContent();
   for (let note of notesArray) {
-    if (note.title == noteName) {
-      noteContent = note.body
+    if (note.title == e.target.textContent) {
+      noteArea.value = note.body;
     }
   }
-  noteArea.value = noteContent
-}
-noteList.addEventListener("click", displayNote)
+};
+
+noteList.addEventListener("click", displayNote);
